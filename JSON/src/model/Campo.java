@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 
-
+//prova
 @Entity
 @Table(name="CAMPO")
 @NamedQuery(name="Campo.findAll", query="SELECT c FROM Campo c")
