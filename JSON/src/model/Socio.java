@@ -30,6 +30,7 @@ public class Socio implements Serializable {
 	@Column(unique = true, nullable = false, precision = 38)
 	private long id;
 	
+	@JsonManagedReference
 	@OneToOne(mappedBy="socio", cascade={CascadeType.ALL})
 	private CategoriaFit categoria;
 
