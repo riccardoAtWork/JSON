@@ -3,6 +3,8 @@ package model;
 import java.io.Serializable;
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 
 
 @Entity
@@ -21,6 +23,7 @@ public class CategoriaFit implements Serializable {
 	
 	@OneToOne
 	@JoinColumn(name="ID_SOCIO")
+	@JsonBackReference
 	private Socio socio;
 
 	public CategoriaFit() {
