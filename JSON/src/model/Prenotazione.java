@@ -27,7 +27,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @NamedQuery(name="Prenotazione.findAll", query="SELECT p FROM Prenotazione p")
 public class Prenotazione implements Serializable {
 	private static final long serialVersionUID = 1L;
-
+//PROVA GIT
 	@Id
 	@SequenceGenerator(name="PRENOTAZIONE_ID_GENERATOR", sequenceName="PRENOTAZIONE_SEQ")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="PRENOTAZIONE_ID_GENERATOR")
