@@ -19,8 +19,7 @@ public class CategoriaFit implements Serializable {
 	private String nTessera;
 
 	private String classifica;
-
-	@JsonBackReference
+//PROVA
 	@OneToOne
 	@JoinColumn(name="ID_SOCIO")
 	@JsonBackReference

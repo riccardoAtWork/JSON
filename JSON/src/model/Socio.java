@@ -32,7 +32,6 @@ public class Socio implements Serializable {
 	
 	@JsonManagedReference
 	@OneToOne(mappedBy="socio", cascade={CascadeType.ALL})
-	@JsonManagedReference
 	private CategoriaFit categoria;
 
 	@Column(nullable = false, length = 32)
